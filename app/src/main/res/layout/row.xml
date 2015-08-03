@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+
+    <LinearLayout
+        android:id="@+id/thumbnail_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="3dp">
+
+        <!--profile image -->
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/user_profile"
+            android:src="@mipmap/ic_launcher" />
+
+    </LinearLayout>
+
+    <!--username-->
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/call_details"
+        android:layout_alignRight="@+id/call_details"
+        android:layout_alignTop="@+id/thumbnail_image"
+        android:layout_toRightOf="@+id/thumbnail_image"
+        android:text="Jonathan Lee"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!--call details-->
+    <TextView
+        android:id="@+id/call_details"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail_image"
+        android:text="Mobile, 53 minutes ago"
+        android:textColor="#343434"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

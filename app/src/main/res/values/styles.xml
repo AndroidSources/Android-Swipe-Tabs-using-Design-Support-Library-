@@ -1,0 +1,19 @@
+<resources>
+
+    <style name="AppTheme" parent="BaseTheme"/>
+
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item> 
+        <item name="colorPrimaryDark">@color/primary_dark</item> 
+        <item name="colorControlHighlight">@color/accent_translucent</item> 
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+
+    <color name="primary">#055C55</color>
+    <color name="primary_dark">#054D47</color>
+    <color name="accent">#FFFFFF</color>
+    <color name="accent_translucent">#80bebebe</color>
+    <color name="accent_bright">#FFF493</color>
+
+</resources>
